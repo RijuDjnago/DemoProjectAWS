@@ -3,7 +3,7 @@ name: Django CI/CD
 on:
   push:
     branches:
-      - main  # Trigger workflow on push to main branch1
+      - main  # Trigger workflow on push to main branch
   pull_request:
     branches:
       - main  # Run tests on pull requests to main
