@@ -38,7 +38,7 @@ jobs:
 
       - name: Deploy to AWS server
         run: |
-          ssh -o StrictHostKeyChecking=no ubuntu@13.53.130.148 << 'EOF'
+          ssh -o StrictHostKeyChecking=no ubuntu@13.53.130.148
           cd /home/ubuntu/DemoProjectAWS
           git pull origin main
           source venv/bin/activate
