@@ -42,9 +42,9 @@ jobs:
           cd /home/ubuntu/DemoProjectAWS
           git pull origin main
           source venv/bin/activate
-          pip install -r req.txt
-          python manage.py migrate
-          python manage.py collectstatic --noinput
+          pip3 install -r req.txt
+          python3 manage.py migrate
+          python3 manage.py collectstatic --noinput
           sudo systemctl restart gunicorn
           sudo systemctl reload nginx
           EOF
